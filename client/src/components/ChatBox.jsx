@@ -7,6 +7,8 @@ const ChatBox = ({ selectedProduct, messages: initialMessages, currentUserId }) 
     const [selectedMessage, setSelectedMessage] = useState(null);
     const [loading, setLoading] = useState(false);
 
+
+    
     useEffect(() => {
         setMessages(initialMessages || []);
     }, [initialMessages]);
